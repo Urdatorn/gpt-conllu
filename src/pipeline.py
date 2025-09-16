@@ -10,10 +10,10 @@ from tqdm import tqdm
 api_key = os.getenv("OPENAI_API_KEY_TREEBANKS") 
 client = OpenAI(api_key=api_key)
 
-def call_api(prompt_text, matsuda_instructions):
+def call_api(prompt_text, matsuda_instructions, model):
     response = client.responses.create(
         #model="ft:gpt-4.1-nano-2025-04-14:personal:swe-conllu:CFvbo29L:ckpt-step-200",
-        model="gpt-5-mini",
+        model=model,
         instructions=matsuda_instructions,
         input=prompt_text
     )
@@ -43,7 +43,7 @@ TASKS = [
     "- Task 5\nAdd DEPS. If none, use _."
 ]
 
-def pipeline(input):
+def pipeline(input, model="gpt-5-mini-2025-08-07"):
     def run_pipeline(input_sentence):
         input_words = re.findall(r'\w+|[^\w\s]', input_sentence, re.UNICODE)
 
@@ -59,7 +59,7 @@ def pipeline(input):
         for i, task in tqdm(enumerate(TASKS, start=1)):
             matsuda_instructions = f"{BASE_SCHEMA}\nNow perform:\n{task}"
             prompt_text = output if output else prompt
-            output = call_api(prompt_text, matsuda_instructions)
+            output = call_api(prompt_text, matsuda_instructions, model=model)
             
             if not os.path.exists("output/debug"):
                 os.makedirs("output/debug")

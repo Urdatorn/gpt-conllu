@@ -87,12 +87,18 @@ def pipeline(input, model="gpt-5-mini-2025-08-07"):
     result = run_pipeline(input)
     return finalize_conllu(result)
 
-if __name__ == "__main__":
-    input_sentence = "Thetta är inte begynnilsen aff Jesu Christi gudz sons euangelio."
-    conllu = pipeline(input_sentence)
-    print(conllu)
+######################
+# --- Batching ---
+######################
 
-    if not os.path.exists("output"):
-        os.makedirs("output")
-    with open("output/parsed.conllu", "w", encoding="utf-8") as f:
-        f.write(conllu + "\n")
+from conllu import parse_incr
+
+def is_valid_conllu(filepath: str) -> bool:
+    try:
+        with open(filepath, "r", encoding="utf-8") as f:
+            for _ in parse_incr(f):
+                pass
+        return True
+    except Exception:
+        return False
+    

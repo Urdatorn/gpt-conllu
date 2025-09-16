@@ -2,5 +2,7 @@
 __pycache__/
 matsuda-style-prompting/__pycache__/
 .vscode/
+
 src/old/*
 output/debug/*
+finetune/*

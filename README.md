@@ -13,4 +13,18 @@ For example, input `"Thetta är inte begynnilsen aff Jesu Christi gudz sons euan
 
 ![Conllu viewer example](media/conllu-viewer-example.png)
 
+```
+1	Thetta	thetta	PRON	_	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	4	nsubj	4:nsubj	_
+2	är	vara	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	4:cop	_
+3	inte	inte	PART	_	Polarity=Neg	2	neg	2:neg	_
+4	begynnilsen	begynnilsen	NOUN	_	Case=Nom|Definite=Def|Gender=Com|Number=Sing	0	root	0:root	_
+5	aff	aff	ADP	_	AdpType=Prep	10	case	10:case	_
+6	Jesu	Jesu	PROPN	_	Case=Gen|Gender=Masc|Number=Sing	7	flat	7:flat|10:nmod:poss	_
+7	Christi	Christi	PROPN	_	Case=Gen|Gender=Masc|Number=Sing	10	nmod:poss	10:nmod:poss	_
+8	gudz	gudz	PROPN	_	Case=Gen|Gender=Masc|Number=Sing	9	nmod:poss	9:nmod:poss|10:nmod:poss	_
+9	sons	sons	NOUN	_	Case=Gen|Gender=Masc|Number=Sing	10	nmod:poss	10:nmod:poss	_
+10	euangelio	euangelio	NOUN	_	Case=Nom|Gender=Neut|Number=Sing	4	nmod	4:nmod	_
+11	.	.	PUNCT	_	_	4	punct	4:punct	_
+```
+
 See [the main notebook](main.ipynb) for instructions and examples of running the pipeline on your texts of choice.

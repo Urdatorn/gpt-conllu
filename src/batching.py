@@ -35,7 +35,7 @@ def prepare_task1_responses_batch_jsonl(
     input_conllu_path: str,
     output_jsonl_path: str,
     model: str = "gpt-5-mini-2025-08-07",
-    max_output_tokens: int = 1024,
+    max_output_tokens: int = 4096,
     batch_prefix: str | None = None,
     extra_body_fields: dict | None = None
 ) -> int:

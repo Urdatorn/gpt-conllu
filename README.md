@@ -14,6 +14,8 @@ For example, input `"Thetta är inte begynnilsen aff Jesu Christi gudz sons euan
 ![Conllu viewer example](media/conllu-viewer-example.png)
 
 ```
+ID	FORM	LEMMА	UPOS	XPOS	FEATS	HEAD	DEPREL	DEPS	MISC
+
 1	Thetta	thetta	PRON	_	Case=Nom|Gender=Neut|Number=Sing|PronType=Dem	4	nsubj	4:nsubj	_
 2	är	vara	AUX	_	Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin	4	cop	4:cop	_
 3	inte	inte	PART	_	Polarity=Neg	2	neg	2:neg	_

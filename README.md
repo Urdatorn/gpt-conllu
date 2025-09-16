@@ -2,7 +2,7 @@
 Prompt engineering GPTs for UD-style parsing of pre-modern Swedish.
 Part of the group research project ``Diachronic Treebanks`` of DigPhil.
 
-Task division inspired by [Matsuda 2025](Matsuda-2025-LLM-dependency-parsing.pdf), but using one prompt per task instead of chain-of-thought. 
+Task division inspired by [Matsuda 2025](media/Matsuda-2025-LLM-dependency-parsing.pdf), but using one prompt per task instead of chain-of-thought. 
 To minimize risk of hallucination, the gpt uses placeholders for tabs, 
 and the actual ten tab `.conllu` is made programmatically once all tasks are done. There are five tasks, with the first task being longer (like Matsuda) and the following each adding one field. To make life easier for the model, we exclude `XPOS` and `MISC` and automatically map them to `_` afterwards.
 

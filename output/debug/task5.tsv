@@ -1,0 +1,11 @@
+1⟶Thetta⟶thetta⟶PRON⟶Case=Nom|Gender=Neut|Number=Sing|PronType=Dem⟶4⟶nsubj⟶4:nsubj
+2⟶är⟶vara⟶AUX⟶Mood=Ind|Number=Sing|Person=3|Tense=Pres|VerbForm=Fin⟶4⟶cop⟶4:cop
+3⟶inte⟶inte⟶PART⟶Polarity=Neg⟶4⟶neg⟶4:neg
+4⟶begynnilsen⟶begynnelse⟶NOUN⟶Case=Nom|Definite=Def|Gender=Com|Number=Sing⟶0⟶root⟶0:root
+5⟶aff⟶af⟶ADP⟶_⟶10⟶case⟶10:case
+6⟶Jesu⟶jesu⟶PROPN⟶Case=Gen|Number=Sing⟶7⟶flat⟶7:flat|10:nmod:poss
+7⟶Christi⟶christi⟶PROPN⟶Case=Gen|Number=Sing⟶10⟶nmod:poss⟶10:nmod:poss
+8⟶gudz⟶gud⟶NOUN⟶Case=Gen|Gender=Com|Number=Sing⟶9⟶nmod:poss⟶9:nmod:poss|10:nmod:poss
+9⟶sons⟶son⟶NOUN⟶Case=Gen|Gender=Com|Number=Sing⟶7⟶appos⟶7:appos|10:nmod:poss
+10⟶euangelio⟶euangelium⟶NOUN⟶Case=Nom|Gender=Neut|Number=Sing⟶4⟶nmod⟶4:nmod
+11⟶.⟶.⟶PUNCT⟶_⟶4⟶punct⟶4:punct

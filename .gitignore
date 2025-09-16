@@ -1,3 +1,5 @@
 .DS_Store
 __pycache__/
 matsuda-style-prompting/__pycache__/
+.vscode/
+src/old/*
